@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário cadastro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form id="form">
+                <div class="form-campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">     <!-- acrescentamos o nome depois o id por conta da validação do formulário com o JQuery --> 
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">       
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF</label>
+                    <input type="tel" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">Cep</label>
+                    <input type="tel" id="cep" name="cep">
+                </div>
+                <div class="form-campo">
+                    <label for="endereco">Endereço completo</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; Fomulário de cadastro - Todos os direitos reservados
+            </p> 
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>            
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>          <!--  Inserindo os plungins do JQuery -->
+    <script src="./js/jquery.validate.min.js"></script> <!--  Fazendo a validação dos plungins do JQuery --> 
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;    /* todo conteúdo que passar a medida na horizontal não será exibido */
+}
+
+.container {
+    max-width: 1024px;  /* lagura máxima */
+    width: 100%;       /* vai ocupar 100% dessa largura */ 
+    margin: 0 auto;    /* para centralizar na vertical */
+}
+
+header, footer {
+    background-color: #119750;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {              /* para o cabeçalho acompanhar a barra de rolagem */ 
+    position: sticky;
+    top: 0;
+    left: 0; 
+}
+
+header h1 {
+padding: 10px;
+margin-bottom: 20px;
+}
+
+header > .container,          
+footer > .container {        /*aproveitamos a mesma regra do cabeçalho para o rodapé */
+    justify-content: space-between;   /* para que o título fique na esquerda e o menu na direita */ 
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {             /* para toda a sessão  */
+    padding: 48px 0;
+}
+
+section h2 {             /* para todos os h2 dentro da sessão  */
+    margin-bottom: 16px;
+}
+
+button {
+    display: block;          /* vai deixar o nome no centro do botão */
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119750;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;  /* borda aredondada no botão */
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display:block;   /* Coloca o campo abaixo do texto */
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}                    
+
+form {
+    max-width: 360px;
+}
+
+form button {               /* Botão do formulário*/
+    max-width: 120px;     /* O tamanho do botão */
+}                             
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
